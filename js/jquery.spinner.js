@@ -74,9 +74,9 @@
 
       this.oldValue = this.value();
       var step = $.isFunction(this.options.step) ? this.options.step.call(this, dir) : this.options.step;
-      var multipler = dir === 'up' ? 1 : -1;
+      var multiplier = dir === 'up' ? 1 : -1;
 
-      this.value(this.oldValue + Number(step, 10) * multipler);
+      this.value(this.oldValue + Number(step, 10) * multiplier);
     },
 
     value: function(v){
